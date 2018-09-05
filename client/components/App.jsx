@@ -26,8 +26,11 @@ class App extends React.Component  {
   }
 
   getSeagal() {
+    let randomWidth = Math.floor((Math.random() * 800) + 200)
+    let randomHeight = Math.floor((Math.random() * 600) + 300)
+
       this.setState({
-        img: seagalImg + '/' + '600' + '/' + '800'
+        img: seagalImg + '/' + randomWidth + '/' + randomHeight
       })
   }
 
